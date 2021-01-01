@@ -1,10 +1,8 @@
 import React from 'react'
-
+import Hero from '../components/Hero';
 function Home() {
     return (
-        <div>
-            hello from home page
-        </div>
+        <Hero hero="defaultHero"></Hero>
     )
 }
 
