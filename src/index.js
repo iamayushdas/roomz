@@ -4,11 +4,14 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter as Router} from 'react-router-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import {TableProvider} from './context';
 ReactDOM.render(
-  <Router >
+  <TableProvider>
+    <Router >
     <App />
-  </Router>,
+  </Router>
+  </TableProvider>,
+  
   document.getElementById('root')
 );
 
