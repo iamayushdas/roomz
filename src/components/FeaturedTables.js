@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
 import { TableContext } from '../context'
+import Loading from './Loading'
 export default class FeaturedTables extends Component {
     static contextType = TableContext
     render() {
-        const {name, greeting} = this.context;
-       
+        const {featuredTables : tables } = this.context;
+       console.log(tables)
         return (
             <div>
-                {greeting} {name} from featured rooms
+                from featured rooms
+                <Loading />
             </div>
         )
     }

@@ -4,7 +4,7 @@ const TableContext = React.createContext();
 export default class TableProvider extends Component {
   state = {
     tables: [],
-    sortedRooms: [],
+    sortedTables: [], 
     featuredTables: [],
     loading: true,
   };
@@ -12,8 +12,17 @@ export default class TableProvider extends Component {
   // getData
 
   componentDidMount() {
+    // this.getData
     let tables = this.formatData(items);
-    console.log(tables);
+    let featuredTables = tables.filter(table => 
+      table.featured === true
+    );
+    this.setState({
+      tables,
+      featuredTables,
+      sortedTables: tables,
+      loading: false
+    })
   }
 
   formatData(items) {
