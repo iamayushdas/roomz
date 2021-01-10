@@ -13,11 +13,11 @@ export default class FeaturedTables extends Component {
         })
         return (
             <section  className = "featured-rooms">
-                <Title title="featured rooms" />
+                <Title title="featured tables" />
                 <div className="featured-rooms-center">
                     {loading ? <Loading/> : tables}
                 </div>
-                <Loading />
+                
             </section>
                 
             
