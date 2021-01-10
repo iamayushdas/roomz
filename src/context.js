@@ -6,7 +6,7 @@ export default class TableProvider extends Component {
     tables: [],
     sortedTables: [], 
     featuredTables: [],
-    loading: true,
+    loading: true
   };
 
   // getData
