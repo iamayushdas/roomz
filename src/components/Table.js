@@ -22,7 +22,7 @@ export default function Table({table}) {
 }
 
 Table.propTypes = {
-    room:PropTypes.shape({
+    table:PropTypes.shape({
         name:PropTypes.string.isRequired,
         slug:PropTypes.string.isRequired,
         images:PropTypes.arrayOf(PropTypes.string).isRequired,

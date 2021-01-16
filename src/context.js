@@ -36,9 +36,15 @@ export default class TableProvider extends Component {
     return tempItems;
   }
 
+  getTable = (slug) => {
+    let tempTables = [...this.state.tables];
+    const table = tempTables.find((table)=> table.slug === slug);
+    return table;
+  }
+
   render() {
     return (
-      <TableContext.Provider value={{ ...this.state }}>
+      <TableContext.Provider value={{ ...this.state, getTable: this.getTable }}>
         {this.props.children}
       </TableContext.Provider>
     );
