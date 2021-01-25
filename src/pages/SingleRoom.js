@@ -31,7 +31,7 @@ export default class SingleRoom extends Component {
             </div>
         }
 
-        const {name, description,capacity,size,price,extras,breakfast,images} =table
+        const { name, description,capacity,size,price,extras,breakfast,images } = table
         return <Hero hero="roomsHero">
             <Banner title={`${name} table`}>
                 <Link to = "/tables" className = "btn-primary">
