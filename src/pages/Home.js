@@ -4,7 +4,7 @@ import Banner from '../components/Banner'
 import { Link } from 'react-router-dom'
 import Services from '../components/Services'
 import FeaturedTables from '../components/FeaturedTables'
-import Button from '../components/StyledHero'
+
 function Home() {
     return (
         <>
@@ -17,7 +17,6 @@ function Home() {
         </Hero>
         <Services/>
         <FeaturedTables />
-        <Button>Hello</Button>
         </>
     )
 }
